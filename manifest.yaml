@@ -1,0 +1,41 @@
+version: 0.0.1
+type: plugin
+author: wfy
+name: test1
+label:
+  en_US: test1
+  ja_JP: test1
+  zh_Hans: test1
+  pt_BR: test1
+description:
+  en_US: "123"
+  ja_JP: "123"
+  zh_Hans: "123"
+  pt_BR: "123"
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+plugins:
+  tools:
+    - provider/test1.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-08-30T21:11:54.240395803+08:00
+privacy: PRIVACY.md
+verified: false
