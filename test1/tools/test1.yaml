@@ -1,0 +1,30 @@
+identity:
+  name: "test1"
+  author: "wfy"
+  label:
+    en_US: "test1"
+    zh_Hans: "test1"
+    pt_BR: "test1"
+description:
+  human:
+    en_US: "123"
+    zh_Hans: "123"
+    pt_BR: "123"
+  llm: "123"
+parameters:
+  - name: completion_report
+    type: files
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: "123"
+      zh_Hans: "123"
+      pt_BR: "123"
+    llm_description: "123"
+    form: llm
+extra:
+  python:
+    source: tools/test1.py
